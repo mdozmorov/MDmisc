@@ -14,7 +14,7 @@ devtools::install_github('mdozmorov/MDmisc')
 - `ipak` - Unified installer for CRAN, Bioconductor, and GitHub packages
 ```
 # CRAN packages
-cranpackages <- c("tidyverse", "data.table", "writexl")
+cranpackages <- c("tidyverse", "data.table", "writexl", "pander")
 ipak(cranpackages, repository = "CRAN")
 # Bioconductor
 biocpackages <- c("limma", "SingleCellExperiment")
