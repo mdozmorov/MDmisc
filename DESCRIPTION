@@ -1,0 +1,15 @@
+Package: MDmisc
+Type: Package
+Title: MD miscellaneous functions
+Version: 1.1.0
+Authors@R: person("Mikhail", "Dozmorov", , "mikhail dot dozmorov at gmail dot com", role = c("aut", "cre"))
+Maintainer: Mikhail Dozmorov <mikhail.dozmorov@gmail.com>
+Description: MD miscellaneous functions
+    for computational genomics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Imports: 
+    BiocManager,
+    devtools
