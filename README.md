@@ -14,7 +14,7 @@ devtools::install_github('mdozmorov/MDmisc')
 - `ipak` - Unified installer for CRAN, Bioconductor, and GitHub packages
 ```
 # CRAN packages
-cranpackages <- c("tidyverse", "data.table", "writexl", "pander")
+cranpackages <- c("tidyverse", "data.table", "writexl")
 ipak(cranpackages, repository = "CRAN")
 # Bioconductor
 biocpackages <- c("limma", "SingleCellExperiment")
@@ -26,3 +26,4 @@ ipak(githubpackages, repository = "github")
 source("http://rnbeads.org/data/install.R")
 ```
 
+- `save_res` - A function to save a data frame or a matrix into an Excel file. Legacy function for compatibility with old code. Use `writexl::write_xlsx()` instead
