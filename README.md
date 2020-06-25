@@ -13,12 +13,17 @@ devtools::install_github('mdozmorov/MDmisc')
 
 - `ipak` - Unified installer for CRAN, Bioconductor, and GitHub packages
 ```
+# Install the latest version of Bioconductor
+# See https://www.bioconductor.org/install/ for the latest release
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.11")
+# Bioconductor
+biocpackages <- c("limma", "edgeR", "SingleCellExperiment")
+ipak(biocpackages, repository = "Bioconductor")
 # CRAN packages
 cranpackages <- c("tidyverse", "data.table", "writexl")
 ipak(cranpackages, repository = "CRAN")
-# Bioconductor
-biocpackages <- c("limma", "SingleCellExperiment")
-ipak(biocpackages, repository = "Bioconductor")
 # GitHub
 githubpackages <- c("nanxstats/ggsci", "slowkow/ggrepel", "mdozmorov/MDtemplate")
 ipak(githubpackages, repository = "github")
