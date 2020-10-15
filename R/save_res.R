@@ -19,7 +19,6 @@
 #' res <- enrichR::enrichFullGeneList(up.genes, dn.genes, databases = "KEGG_2016", fdr.cutoff = 1) # Enrichment analysis of up/downregulated genes
 #' save_res(res, fileName = fileName, wb = wb, sheetName = "KEGG")
 #' }
-#' @importFrom openxlsx addWorksheet writeData saveWorkbook
 #'
 save_res <- function(res, fileName = "fileName.xlsx", wb = wb, sheetName = "KEGG") {
   if (nrow(res) > 0) {
