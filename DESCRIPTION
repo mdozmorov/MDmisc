@@ -16,4 +16,5 @@ Imports:
     dplyr
 Suggests: 
     ellipse,
+    devtools,
     openxlsx
