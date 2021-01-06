@@ -16,26 +16,11 @@ devtools::install_github('mdozmorov/MDmisc')
 ![](inst/pca_func.png)
 
 - `ipak` - Unified installer for CRAN, Bioconductor, and GitHub packages. Depreciated, use `BiocManager::install(c("tidyverse", "blogdown", "xaringan", "xaringanthemer"))` to install packages from Bioconductor, CRAN, and GitHub. 
-```
-# Install the latest version of Bioconductor
-# See https://www.bioconductor.org/install/ for the latest release
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install(version = "3.11")
-# Bioconductor
-biocpackages <- c("limma", "edgeR", "SingleCellExperiment", "clusterProfiler")
-ipak(biocpackages, repository = "Bioconductor")
-# CRAN packages
-cranpackages <- c("tidyverse", "data.table", "caret", "e1071", "writexl", "enrichR", "xaringan", "cowplot", "pander", "survminer")
-ipak(cranpackages, repository = "CRAN")
-# GitHub
-githubpackages <- c("nanxstats/ggsci", "slowkow/ggrepel", "mdozmorov/MDtemplate", "mdozmorov/MDmisc")
-ipak(githubpackages, repository = "github")
-# RnBeads special installation of many genomics packages
-source("http://rnbeads.org/data/install.R")
-```
 
 - `save_res` - A function to save a data frame or a matrix into an Excel file. Legacy function for compatibility with old code. Depreciated, use `writexl::write_xlsx()`
+
+- `unembed.R` - Splits rows based on values embedded in a column based on a separator. E.g. one row with "ABC11 /// BCD22" variable in a column in will be split into two separate entries (" /// " separator), creating two ABC11 and BCD22 rows with other values equal to the original row
+
 
 ## Notes
 

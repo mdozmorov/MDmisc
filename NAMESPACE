@@ -3,5 +3,6 @@
 export(ipak)
 export(pca_func)
 export(save_res)
+export(unembed)
 importFrom(utils,install.packages)
 importFrom(utils,installed.packages)
