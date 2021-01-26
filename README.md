@@ -11,6 +11,8 @@ devtools::install_github('mdozmorov/MDmisc')
 
 ## Functions
 
+- `gene_filter` - Removes low expression and low variability genes from a gene expression matrix. Filters by the proportion of expressed genes, and/or min expression difference.
+
 - `pca_func` - PCA plot with groups wrapped into ellipses. `pca_func(iris[, 1:3], groups = iris$Species, title = "Iris")`
 
 ![](inst/pca_func.png)
