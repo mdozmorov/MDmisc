@@ -17,12 +17,15 @@ devtools::install_github('mdozmorov/MDmisc')
 
 ![](inst/pca_func.png)
 
-- `ipak` - Unified installer for CRAN, Bioconductor, and GitHub packages. Depreciated, use `BiocManager::install(c("tidyverse", "blogdown", "xaringan", "xaringanthemer"))` to install packages from Bioconductor, CRAN, and GitHub. 
-
-- `save_res` - A function to save a data frame or a matrix into an Excel file. Legacy function for compatibility with old code. Depreciated, use `writexl::write_xlsx()`
+- `round_df` - Round all columns with numerical values in a data frame
 
 - `unembed.R` - Splits rows based on values embedded in a column based on a separator. E.g. one row with "ABC11 /// BCD22" variable in a column in will be split into two separate entries (" /// " separator), creating two ABC11 and BCD22 rows with other values equal to the original row
 
+### Depreciated
+
+- `ipak` - Unified installer for CRAN, Bioconductor, and GitHub packages. Depreciated, use `BiocManager::install(c("tidyverse", "blogdown", "xaringan", "xaringanthemer"))` to install packages from Bioconductor, CRAN, and GitHub. 
+
+- `save_res` - A function to save a data frame or a matrix into an Excel file. Legacy function for compatibility with old code. Depreciated, use `writexl::write_xlsx()`
 
 ## Notes
 

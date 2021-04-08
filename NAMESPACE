@@ -3,6 +3,7 @@
 export(gene_filter)
 export(ipak)
 export(pca_func)
+export(round_df)
 export(save_res)
 export(unembed)
 importFrom(utils,install.packages)
